@@ -1,0 +1,159 @@
+header{
+    width:100%;
+    /*цвет шапки*/
+    background-color:#000099;
+    padding: 0;
+    margin:0;
+    height:120px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.picture-logo{
+    width:170px;
+    height:100px;
+    float:left;
+    margin:10px;
+}
+
+nav {
+    margin-top: 20px;
+    order: 1;
+    width: auto;
+    display: grid;
+    height: auto;
+    align-content: center;
+    background-color: #CCFFFF;
+}
+
+nav a {
+    float: left;
+    color: #99FFFF;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #66CCFF;
+    font-size: 120%;
+}
+
+.content {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    color: black;
+    background-color: #CCFFFF;
+    margin-bottom: 25px;
+}
+
+
+
+table {
+    border: 1px solid blue;
+    border-collapse: separate;
+    empty-cells: hide;
+    margin-bottom: 10px;
+}
+
+#table {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #66CCCC;
+    color: mediumblue;
+}
+
+tr:nth-child(even) {
+    background-color: #00CCFF;
+    color: gold;
+}
+
+
+
+footer {
+    width: 100%;
+    color: darkblue;
+    background-color: #0099FF;
+    min-height: 75px;
+}
+
+
+
+
+form {
+    display: grid;
+    font-size: 20px;
+    text-align: center;
+}
+
+form input {
+    font-size: 16px;
+}
+
+form select {
+    font-size: 16px;
+}
+
+form button {
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #99FFFF;
+}
+
+form textarea {
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        color: indigo;
+        background-color: #CCCCFF;
+        max-width: 960px;
+        margin-bottom: 25px;
+    }
+
+
+    .content ul {
+        order: -1;
+    }
+
+
+    header {
+        display: block;
+    }
+
+
+    nav {
+        display: block;
+        float: right;
+        width: auto;
+        height: 50px;
+        margin-top: auto;
+        margin-left: auto;
+        align-content: center;
+        background-color: #3366FF;
+    }
+
+}
